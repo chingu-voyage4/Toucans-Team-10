@@ -1,1 +1,83 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Jane Doe </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <style>
+    body{
+      text-align: center;
+    }
+
+    #content{
+      display: grid;
+      grid-template-columns: 1fr;
+      /* grid-template-rows: repeat(8, 1fr); */
+      /* grid-auto-rows: minmax(300px, auto); */
+    }
+
+    .testimonials{
+      display: grid;
+      background-color: #F05F40;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 100px auto;
+      padding-left: 75px;
+      padding-right: 75px;
+      padding-bottom: 75px;
+      padding-top: 50px;
+      grid-column-gap: 10px;
+      /* grid-template-rows: auto auto; */
+      /* grid-gap: 10px; */
+    }
+
+    .testimonials h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.875em;
+      color: white;
+      font-weight: normal;
+      grid-column: 1 / 5;
+      margin: 0px;
+      padding-bottom: 15px;
+      align-self: end;
+    }
+
+    .testimonials p {
+      font-family: 'Merriweather', serif;
+      padding-top: 30px;
+      color: rgba(255, 255, 255, .7);
+      margin: 0px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+
+
+
+    </style>
+</head>
+<body>
+
+  <div id="content">
+    <div class="nav">Nav</div>
+    <div class="hero">Hero</div>
+    <div class="start">You Want The Best</div>
+    <div class="services">Jane At Your Service</div>
+    <div class="portfolio">Portfolio</div>
+    <div class="testimonials">
+      <h2> <i class="far fa-comment"></i> Don't take my word for it <i class="far fa-comment"></i> </h2>
+      <p> "Lorem ipsum dolor sit amet, stet assentior dissentias te vis, pri civibus minimum vivendum ei. Duo dolor laboramus no, ut nec illud legendos intellegebat. Meliore omnesque eum ex, viris aperiam vis ne." </p>
+      <p> "Ne brute nostrud consequat vim, quando mucius noluisse sit ei. Et aliquip admodum eam." </p>
+      <p> "Sit tantas suavitate te. Pri dolore copiosae ea, qui doming minimum scribentur id." </p>
+      <p> "Ad eam noluisse philosophia, pro et menandri forensibus, nam deleniti molestie definitiones ne." </p>
+    </div>
+    <div class="linkedin">LinkedIn</div>
+    <div class="contact">Let's Get In Touch!</div>
+  </div>
+
+
+</body>
+
+</html>
