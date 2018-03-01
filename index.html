@@ -46,6 +46,18 @@
       align-self: end;
     }
 
+    /* this is the line under the testimonials heading
+    i don't think it's exactly right because it moves when
+    you resize the page  */
+    .testimonials h2:after {
+      padding-top: 20px;
+      border-bottom: 3px solid white;
+      display: block;
+      content: '';
+      width: 50px;
+      margin-left: 47%;
+    }
+
     /* this p is a grid item of testimonials */
     .testimonials p {
       font-family: 'Merriweather', serif;
