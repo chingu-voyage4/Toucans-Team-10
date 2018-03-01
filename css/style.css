@@ -1,1 +1,116 @@
-/*####Portfolio Website Styles#####*/
+html {
+  font-size: 62.5%; /* 10px browser default */
+}
+/* ## Headings
+--------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body p {
+  font-family: 'Merriweather', serif;
+}
+
+/*******Carolyn's Styles***********/
+    body{
+      text-align: center;
+      margin: 0;
+    }
+
+    /* content is the entire section of the website
+    content is a grid and the sections of the website are grid items */
+    #content{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    /* testimonial is a grid item of content
+    it is also a nested grid (contains other grid items) */
+    .testimonials{
+      display: grid;
+      background-color: #F05F40;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 100px auto;
+      padding-left: 75px;
+      padding-right: 75px;
+      padding-bottom: 75px;
+      padding-top: 50px;
+      grid-column-gap: 10px;
+    }
+
+    /* this h2 is a grid item of testimonials */
+    .testimonials h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.875em;
+      color: white;
+      font-weight: normal;
+      grid-column: 1 / 5;
+      margin: 0px;
+      padding-bottom: 15px;
+      align-self: end;
+    }
+
+    /* this is the line under the testimonials heading
+    i don't think it's exactly right because it moves when
+    you resize the page  */
+    .testimonials h2:after {
+      padding-top: 20px;
+      border-bottom: 3px solid white;
+      display: block;
+      content: '';
+      width: 50px;
+      margin-left: 47%;
+    }
+
+    /* this p is a grid item of testimonials */
+    .testimonials p {
+      font-family: 'Merriweather', serif;
+      padding-top: 30px;
+      color: rgba(255, 255, 255, .7);
+      margin: 0px;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    /* linkedin is a grid item of content
+    it is also a nested grid (contains other grid items) */
+    .linkedin {
+      padding-top: 50px;
+      background-color: #2b2725;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      justify-items: center;
+
+    }
+
+    /* this h2 is a grid item of linkedin */
+    .linkedin h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.875em;
+      color: white;
+      font-weight: normal;
+      margin: 0px;
+      padding-bottom: 30px;
+    }
+
+    /* this icon is a grid item of linkedin */
+    .linkedin-icon {
+      /* justify-content: center; */
+      background-color: white;
+      border-radius: 30px;
+      width: 90px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      margin-bottom: 30px;
+
+    }
+
+    a {
+      color: black;
+    }
