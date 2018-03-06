@@ -46,8 +46,8 @@ body p {
 
     /* this h2 is a grid item of testimonials */
     .testimonials h2 {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.875em;
+      /* font-family: 'Open Sans', sans-serif; */
+      /* font-size: 1.875em; */
       color: white;
       font-weight: normal;
       grid-column: 1 / 5;
@@ -92,8 +92,8 @@ body p {
 
     /* this h2 is a grid item of linkedin */
     .linkedin h2 {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.875em;
+      /* font-family: 'Open Sans', sans-serif; */
+      /* font-size: 1.875em; */
       color: white;
       font-weight: normal;
       margin: 0px;
