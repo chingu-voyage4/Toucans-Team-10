@@ -11,6 +11,7 @@ h5,
 h6 {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.875em;
+  font-weight: normal;
 }
 
 body p {
@@ -49,7 +50,7 @@ body p {
       /* font-family: 'Open Sans', sans-serif; */
       /* font-size: 1.875em; */
       color: white;
-      font-weight: normal;
+      /* font-weight: normal; */
       grid-column: 1 / 5;
       margin: 0px;
       padding-bottom: 15px;
@@ -95,7 +96,7 @@ body p {
       /* font-family: 'Open Sans', sans-serif; */
       /* font-size: 1.875em; */
       color: white;
-      font-weight: normal;
+      /* font-weight: normal; */
       margin: 0px;
       padding-bottom: 30px;
     }
