@@ -110,8 +110,33 @@ body p {
     /* contact is a grid item of content
     it is also a nested grid (contains other grid items) */
     .contact{
+      display: grid;
       padding-top: 50px;
+      grid-template-columns: repeat(3, 1fr);
+      padding-bottom: 100px;
     }
+
+    .contact h2{
+      grid-column: 1 / 4;
+    }
+
+    /* this is the line under the contact ("let's get in touch") heading
+    i don't think it's exactly right because it moves when
+    you resize the page  */
+    .contact h2:after {
+      padding-top: 20px;
+      border-bottom: 3px solid #F05F40;
+      display: block;
+      content: '';
+      width: 50px;
+      margin-left: 47%;
+    }
+
+    .contact-descr{
+      grid-column: 1 / 4;
+    }
+
+
 
 
     a {
