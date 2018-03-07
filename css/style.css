@@ -129,7 +129,12 @@ body{
 
     .the-best.section-sub-heading p{
       color: rgba(255, 255, 255, .7);
+      justify-content: center;
+      align-items: center;
+      margin-left: 18rem;
+      margin-right: 18rem;
       }
+      
     .the-best.section-heading  {
       color:#fff;
       }
