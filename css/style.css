@@ -119,7 +119,6 @@ body{
       color: black;
     }
 
-
     /***Kevin's Styles***/
     /**You Want the Best**/
     #the-best{
@@ -141,6 +140,18 @@ body{
       }
       .the-best.divider hr{
     background-color:#fff;
+    }
+
+     .get-started{
+       padding: 1.6rem 1.5rem;
+       background-color: #fff;
+       border: #fff;
+       font-weight: 700;
+       text-transform: uppercase;
+       border-radius:300px;
+       min-width: 11.5%;
+       align-self: center;
+        margin-top: 1%;
     }
 
     /**Portfolio Grid**/
@@ -199,17 +210,3 @@ body{
   .image:hover .overlay-color{
    opacity: 1;
  }
-
-
-
- .get-started{
-   padding: 1.6rem 1.5rem;
-   background-color: #fff;
-   border: #fff;
-   font-weight: 700;
-   text-transform: uppercase;
-   border-radius:300px;
-   margin-left: 43%;
-    margin-right: 43%;
-    margin-top: 1%;
-}
