@@ -142,6 +142,18 @@ body{
     background-color:#fff;
     }
 
+    .get-started{
+      padding: 1.6rem 1.5rem;
+      background-color: #fff;
+      border: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius:300px;
+      min-width: 11.5%;
+      justify-self: center;
+      margin-top: 1%;
+   }
+
     /**Portfolio Grid**/
   #portfolio-grid{
     display:grid;
@@ -150,7 +162,7 @@ body{
     margin:5%;
   }
 
-  .section-heading, .divider, .section-sub-heading  {
+  .section-heading, .divider, .section-sub-heading, .getting-started  {
     grid-column: 1 / -1;
   }
 
@@ -198,17 +210,3 @@ body{
   .image:hover .overlay-color{
    opacity: 1;
  }
-
-
-
- .get-started{
-   padding: 1.6rem 1.5rem;
-   background-color: #fff;
-   border: #fff;
-   font-weight: 700;
-   text-transform: uppercase;
-   border-radius:300px;
-   margin-left: 43%;
-    margin-right: 43%;
-    margin-top: 1%;
-}
