@@ -144,31 +144,37 @@ body{
     }
 
      .get-started{
+       display:grid;
        padding: 1.6rem 1.5rem;
        background-color: #fff;
        border: #fff;
        font-weight: 700;
        text-transform: uppercase;
        border-radius:300px;
-       min-width: 11.5%;
-       align-self: center;
+       width: 13rem;
+       justify-self: center;
         margin-top: 1%;
     }
 
     /**Portfolio Grid**/
   #portfolio-grid{
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     grid-gap: 20px;
     margin:5%;
   }
 
+  .portfolio-grid-title{
+    grid-column: 1 / -1;
+  }
   .section-heading, .divider, .section-sub-heading  {
     grid-column: 1 / -1;
   }
 
   .section-heading h2{
     font-size: 3rem;
+    margin-bottom: 1%;
   }
 
   .divider hr {
@@ -200,12 +206,13 @@ body{
    transition: .5s ease;
    display: inline-grid;
    position: relative;
+
  }
 
  .image {
   display: block;
   width: 100%;
-  height: 200px;
+  min-height: 200px;
 }
 /*
 .image .overlay-color{
@@ -237,6 +244,14 @@ body{
   font-size: 20px;
 }
 
+.project-category{
+  color: rgba(255, 255, 255, .7);
+}
+
+.project-name{
+  font-size:2.2rem
+}
+
 .overlay-color{
   position: absolute;
   top: 0;
@@ -262,4 +277,12 @@ body{
  .portfolio-item:hover .overlay-color {
     opacity:1;
     /*width:100%;*/
+}
+
+/**##### Media Queries #####**/
+@media (max-width:780px){
+  .the-best.section-sub-heading p{
+    margin-left: 1rem;
+    margin-right:1rem;
+  }
 }
