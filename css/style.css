@@ -136,10 +136,15 @@ body p {
       grid-column: 1 / 4;
     }
 
-
-
-
-    a {
+    .contact-icon:link, .contact-icon:visited{
       color: black;
+    }
+
+    .contact-icon-text:link, .contact-icon-text:visited{
+      color: #F05F40;
       text-decoration: none;
+    }
+
+    .contact-icon-text:hover{
+      text-decoration: underline;
     }
