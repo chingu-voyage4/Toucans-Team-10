@@ -1,28 +1,34 @@
 html {
   /* font-size: 62.5%; 10px browser default  */
 }
-/* ## Headings
---------------------------------------------- */
+/* ## Headings###*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', sans-serif;
+
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-family: 'Open Sans','Helvetica Neue', sans-serif;
   font-size: 1.875em;
   font-weight: normal;
+
 }
+
 
 body p {
   font-family: 'Merriweather', serif;
+  font-size: 1.6rem;
+
 }
 
-/*******Carolyn's Styles***********/
-    body{
-      text-align: center;
-      margin: 0;
-    }
+body{
+  text-align: center;
+  margin: 0;
+  font-size: 1.6rem;
+}
 
     /* content is the entire section of the website
     content is a grid and the sections of the website are grid items */
@@ -31,6 +37,7 @@ body p {
       grid-template-columns: 1fr;
     }
 
+/****Carolyn's Styles*****/
     /* testimonial is a grid item of content
     it is also a nested grid (contains other grid items) */
     .testimonials{
@@ -47,7 +54,7 @@ body p {
 
     /* this h2 is a grid item of testimonials */
     .testimonials h2 {
-      color: white;
+      color: #fff;
       grid-column: 1 / 5;
       margin: 0px;
       padding-bottom: 15px;
@@ -90,7 +97,7 @@ body p {
 
     /* this h2 is a grid item of linkedin */
     .linkedin h2 {
-      color: white;
+      color: #fff;
       margin: 0px;
       padding-bottom: 30px;
     }
@@ -98,7 +105,7 @@ body p {
     /* this icon is a grid item of linkedin */
     .linkedin-icon {
       /* justify-content: center; */
-      background-color: white;
+      background-color: #fff;
       border-radius: 30px;
       width: 90px;
       padding-top: 13px;
@@ -137,8 +144,100 @@ body p {
     }
 
     .contact-icon:link, .contact-icon:visited{
-      color: black;
+      color: #000;
     }
+
+    /***Kevin's Styles***/
+    /**You Want the Best**/
+    #the-best{
+      display: grid;
+      background-color: #F05F40;
+      padding: 5%;
+    }
+
+    .the-best.section-sub-heading p{
+      color: rgba(255, 255, 255, .7);
+      justify-content: center;
+      align-items: center;
+      margin-left: 18rem;
+      margin-right: 18rem;
+      }
+
+    .the-best.section-heading  {
+      color:#fff;
+      }
+      .the-best.divider hr{
+    background-color:#fff;
+    }
+
+     .get-started{
+       padding: 1.6rem 1.5rem;
+       background-color: #fff;
+       border: #fff;
+       font-weight: 700;
+       text-transform: uppercase;
+       border-radius:300px;
+       min-width: 11.5%;
+       align-self: center;
+        margin-top: 1%;
+    }
+
+    /**Portfolio Grid**/
+  #portfolio-grid{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin:5%;
+  }
+
+  .section-heading, .divider, .section-sub-heading  {
+    grid-column: 1 / -1;
+  }
+
+  .section-heading h2{
+    font-size: 3rem;
+  }
+
+  .divider hr {
+    background-color: #F05F40;
+    width: 3px;
+    min-width: 50px;
+    height:3px;
+    border: none;
+    /*margin-top: -3%;*/
+  }
+
+ .section-sub-heading p{
+   /*margin-top:-3%;*/
+   color: #777;
+ }
+
+ .portfolio-thumbnail{
+   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+ }
+
+ .image{
+   display: grid;
+   justify-content: center;
+   align-items: center;
+   border-radius: 3px;
+   max-width: 100%;
+   height:200px;
+   opacity: 1;
+   transition: .5s ease;
+
+ }
+
+  .overlay-color{
+   position:absolute;
+   opacity: 0;
+   transition: .5s ease;
+   background-color: #008CBA;
+ }
+
+  .image:hover .overlay-color{
+   opacity: 1;
+ }
 
     .contact-icon-text:link, .contact-icon-text:visited{
       color: #F05F40;
@@ -148,3 +247,4 @@ body p {
     .contact-icon-text:hover{
       text-decoration: underline;
     }
+
