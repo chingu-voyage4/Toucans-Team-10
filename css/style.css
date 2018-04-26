@@ -226,7 +226,7 @@ body, html {
       /*linear-gradient(to right, rgba(53, 92, 125, .7), rgba(108, 91, 123, .7), rgba(192, 108, 132, .8)),*/
       /*radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,.4) 70%),*/
       /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),*/
-      url(https://github.com/chingu-voyage4/Toucans-Team-10/blob/master/img/computer.jpg);
+      url("https://github.com/chingu-voyage4/Toucans-Team-10/blob/master/img/computer.jpg");
 
       background-position: center;
       background-repeat: no-repeat;
