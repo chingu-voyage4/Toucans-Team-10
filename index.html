@@ -11,11 +11,26 @@
 
 </head>
 <body>
-
-  <div id="content">
-    <div class="nav">Nav</div>
-    <div class="hero">Hero</div>
-    
+  <div id"top"></div>
+    <!--<div id="content">-->
+    <div class="hero">
+      <nav class="nav-menu">
+        <ul class="nav-bar">
+          <li class="logo"><a href="#top">Jane's Portfolio</a></li>
+          <li class="nav-item 1"><a href="#the-best">About</a></li>
+          <li class="nav-item 2"><a href="#services">Services</a></li>
+          <li class="nav-item 3"><a href="#portfolio-grid">Portfolio</a></li>
+          <li class="nav-item 4"><a href="#testimonials">Testimonials</a></li>
+          <li class="nav-item 5"><a href="#contact">Contact</a></li>
+          <li class="nav-item 6"><a href="#">Blog</a></li>
+        </nav>
+      <div class="header-text">
+      <h1>Let's get to work!</h1>
+      <div class="portfolio-section divider"><hr></div>
+      <p>Jane Doe creates beautiful websites.</p>
+      <button class="find-out-more">Find out more</button>
+  </div>
+  </div>
       <!--You Want the Best Section**Kevin**-->
     <section id="the-best">
       <div class="the-best section-heading"><h2>You want the best</h2></div>
@@ -30,8 +45,37 @@
 
 
       <!--At Your Service Section ###Ryan's section####-->
-    <div class="services">Jane At Your Service</div>
-
+    <section id="services">
+      <div class="section-heading">
+        <h2>Jane At Your Service</h2>
+        <div class="portfolio-section divider"><hr></div>
+      </div>
+        <div class="container">
+          <div class="box box-1">
+              <i class="far fa-gem fa-3x"></i>
+              <h3>Pretty Code</h3>
+              <p>Jane is a fan of web standards. You can rest assured
+                your project will be coded well.</p>
+          </div>
+          <div class="box box-2">
+              <i class="far fa-paper-plane fa-3x"></i>
+              <h3>Ready to Launch</h3>
+              <p>No matter the size or scope, Jane can deliver
+                projects on-time and with a smile.</p>
+          </div>
+          <div class="box box-3">
+              <i class="far fa-newspaper fa-3x"></i>
+              <h3>Up to Date</h3>
+              <p>Technology is always changing. Jane makes sure
+                your project is so not 2008.</p>
+          </div>
+          <div class="box box-4">
+              <i class="far fa-heart fa-3x"></i>
+              <h3>Made with Love</h3>
+              <p>You have to make your websites with love these days.</p>
+          </div>
+        </div>
+    </section>
     <!--Portfolio Section-->
     <section id="portfolio-grid">
       <div class="portfolio-section section-heading"><h2>Portfolio</h2></div>
@@ -74,16 +118,17 @@
 
 
     <!--testimonials-section-->
-    <div class="testimonials">
+    <section id="testimonials">
+    <div class="testimonials section-heading">
       <h2> <i class="far fa-comment"></i> Don't take my word for it <i class="far fa-comment"></i> </h2>
       <p> "Lorem ipsum dolor sit amet, stet assentior dissentias te vis, pri civibus minimum vivendum ei. Duo dolor laboramus no, ut nec illud legendos intellegebat. Meliore omnesque eum ex, viris aperiam vis ne." </p>
       <p> "Ne brute nostrud consequat vim, quando mucius noluisse sit ei. Et aliquip admodum eam. Ne brute nostrud consequat vim, quando mucius noluisse sit ei. Pri dolore copiosae ea, qui doming minimum scribentur id." </p>
       <p> "Sit tantas suavitate te. Pri dolore copiosae ea, qui doming minimum scribentur id. Ad eam noluisse philosophia, pro et menandri forensibus, nam deleniti molestie definitiones ne. Lorem ipsum dolor sit amet, stet assentior dissentias te vis, pri civibus minimum vivendum ei." </p>
       <p> "Ad eam noluisse philosophia, pro et menandri forensibus, nam deleniti molestie definitiones ne. Duo dolor laboramus no, ut nec illud legendos intellegebat." </p>
     </div>
-
+  </section>
     <!--LinkedIn-section-->
-    <div class="linkedin">
+    <div class="linkedin section-heading">
       <h2>Jane Doe on LinkedIn</h2>
       <div class="linkedin-icon">
         <a href="#"> <i class="fab fa-linkedin-in fa-2x"></i> </a>
@@ -91,7 +136,8 @@
     </div>
 
     <!--contact-section-->
-    <div class="contact">
+    <section id="contact">
+    <div class="contact section-heading">
       <h2>Let's Get In Touch!</h2>
       <p class="contact-descr"> Ready to start your next project with Jane? That's great! Contact her and she will get back to you as soon as possible! </p>
       <div class="github-icon">
@@ -106,10 +152,10 @@
       <p><a class="contact-icon-text" href="#"> GitHub </a></p>
       <p><a class="contact-icon-text" href="#"> @JaneDoe </a></p>
       <p><a class="contact-icon-text" href="#"> Email Jane </a></p>
-
   </div>
   </div>
-
-
+</section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
