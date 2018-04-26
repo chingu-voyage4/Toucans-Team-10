@@ -1,5 +1,6 @@
 html {
-  /* font-size: 62.5%; 10px browser default  */
+ font-size: 62.5%;
+   /*10px browser default  */
 }
 /* ## Headings###*/
 h1,
@@ -9,10 +10,10 @@ h4,
 h5,
 h6 {
 
-  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
+  /*font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;*/
   font-family: 'Open Sans','Helvetica Neue', sans-serif;
-  font-size: 1.875em;
+  font-size: 1.875rem;
   font-weight: normal;
 
 }
@@ -30,12 +31,78 @@ body{
   font-size: 1.6rem;
 }
 
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
     /* content is the entire section of the website
     content is a grid and the sections of the website are grid items */
     #content{
       display: grid;
       grid-template-columns: 1fr;
     }
+
+
+    nav{
+      font-family: 'Open Sans','Helvetica Neue', sans-serif;
+      font-weight: bold;
+    }
+
+    .nav-bar{
+      position: fixed;
+      display: grid;
+      list-style: none;
+      grid-auto-rows: auto;
+      grid-gap: 1em;
+      align-items: center;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      border-bottom: 4px solid rgba(255, 255, 255, .3);
+      padding-bottom: 1%;
+      width: 100%;
+      top: 0;
+      background-color: transparent;
+      margin-top: 0;
+      padding-top: .5%;
+      }
+
+    /*  .nav-item{
+        display:grid;
+        justify-items:center;
+      }*/
+      .nav-bar a{
+        color: rgba(255, 255, 255, .7);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .nav-item{
+        display: grid;
+        justify-self: end;
+        justify-items:end;
+        padding-top: 1%;
+      }
+
+      .logo{
+        display:grid;
+        font-size: 2.3rem;
+        grid-column: 1/2;
+        justify-items: left;
+      }
+      .scrolled{
+        background-color:#fff;
+        transition: ease 1s;
+        color: #222;
+      }
+
+      .scrolled .logo a {
+        color: #F05F40;
+      }
+
+      .scrolled a{
+        color: #222;
+      }
 
 /****Carolyn's Styles*****/
     /* testimonial is a grid item of content
@@ -99,7 +166,7 @@ body{
     .linkedin h2 {
       color: #fff;
       margin: 0px;
-      padding-bottom: 30px;
+      padding-bottom: 1.5%;;
     }
 
     /* this icon is a grid item of linkedin */
@@ -110,7 +177,7 @@ body{
       width: 90px;
       padding-top: 13px;
       padding-bottom: 13px;
-      margin-bottom: 30px;
+      margin-bottom: 3.5%;
 
     }
 
@@ -141,6 +208,8 @@ body{
 
     .contact-descr{
       grid-column: 1 / 4;
+      margin-top: -.5%;
+      margin-bottom: 2%;
     }
 
     .contact-icon:link, .contact-icon:visited{
@@ -148,6 +217,53 @@ body{
     }
 
     /***Kevin's Styles***/
+    /**Hero**/
+
+
+    .hero{
+      background-image:
+      radial-gradient(circle, rgba(34,193,195,.7), rgba(71,61,101,0.8) 100%),
+      /*linear-gradient(to right, rgba(53, 92, 125, .7), rgba(108, 91, 123, .7), rgba(192, 108, 132, .8)),*/
+      /*radial-gradient(circle, rgba(34,193,195,1) 0%, rgba(253,187,45,.4) 70%),*/
+      /*linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),*/
+      url("file:///C:/Users/micks/Documents/projects/portfolio-site/toucans-10/img/computer.jpg");
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /*background-position: center;*/
+      color:#fff;
+      height:100%;
+      display: grid;
+    }
+
+
+    .hero h1{
+      font-weight: 700;
+      font-size: 50px;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+
+    .header-text{
+      justify-self: center;
+    }
+
+    .find-out-more{
+      padding: 1.6rem 1.5rem;
+      background-color: #F05F40;
+      border: #F05F40;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius:300px;
+      min-width: 11.5%;
+      align-self: center;
+       margin-top: 1%;
+       justify-self: center;
+       padding: 2.0rem;
+       color:#fff;
+    }
+
     /**You Want the Best**/
     #the-best{
       display: grid;
@@ -180,7 +296,42 @@ body{
        min-width: 11.5%;
        align-self: center;
         margin-top: 1%;
+        justify-self: center;
+        padding: 2.0rem;
     }
+
+#services{
+  background-color: #222;
+  color: #fff;
+  padding: 5% 0;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  justify-content: space-between;
+}
+.box{
+  padding:5rem;
+}
+
+.container p{
+    color: rgba(255, 255, 255, .7);
+}
+
+.fa-gem, .fa-paper-plane, .fa-newspaper,
+.fa-heart
+ {
+  color: #F05F40;
+}
+
+
 
     /**Portfolio Grid**/
   #portfolio-grid{
@@ -247,4 +398,3 @@ body{
     .contact-icon-text:hover{
       text-decoration: underline;
     }
-
